@@ -1,0 +1,95 @@
+= Personal Knowledge Management
+Christoph Tittel
+2020-07-03 23:29:13 +0200
+:page-title: Personal Knowledge Management
+:page-layout: post
+:toc:
+
+My thoughts on personal knowledge management.
+
+== What is personal knowledge management?
+[quote, 'https://twitter.com/michaelbatnick/status/854379376749801474[Tweet] by Michael Batnick']
+____
+Most books should be blog posts, most blog posts should be tweets, and most tweets should be deleted.
+____
+
+[quote, Richard Feynman]
+____
+Notes aren’t a record of my thinking process. They are my thinking process.
+____
+
+What I'll call knowledge management in the scope of this article is the system with which one notes down, organizes and (hopefully) later looks up knowledge while reading and working.
+One may also refer to this as just *note taking*, but I think *personal knowledge management* is a more accurate term.
+
+== Why is personal knowledge management important?
+It can be a tool by which knowledge workers (or even all people) can improve their productivity.
+Our working- and long term memories are limited and a knowledge management system can be useful to keep the knowledge which is important in the current task or possible future tasks in sight.
+
+== What should be put into a personal knowledge management system?
+This is my subjective view about what belongs in such a system.
+
+It is important to not overdo it with the entries.
+If you read a book, article or even forum thread you may think that it is a good idea to write a detailed summary about it afterwards.
+In my opinion this is a bad idea for several reasons:
+Firstly it is a demotivating task that eats your mental energy.
+It should also be unnecessary because a good book should already be a concise summary of the topic
+Lastly, if you make a super detailed, long and boring summary of something, you will probably never look at it again and just go back to the source material
+
+But there are many other kinds of information that should be put into a personal knowledge base:
+Your own original ideas (e.g. "combine concept A with concept B to create something which hasn't been done before" or an idea for a new project/product).
+Very short but informative summaries of new concepts and ideas you found somewhere else with references to the source and related material. Especially useful for this is if the system offers the ability to draw and easily add images.
+Interesting quotes (Aha moments) you come across.
+Lists you compiled yourself, e.g. of software, concepts, topics, fields, topics within a field, etc.
+Mindmaps are uncommon in such systems but could have the same usecase as lists but be more powerful.
+
+== Which features should the ideal personal knowledge management system provide?
+This is of course my subjective opinion.
+The main philosophy: **the software should do whatever is convenient for the user, not the other way round**
+
+The most important thing is that it must be very simple to input, organize and find relevant knowledge.
+The system should have a inbuilt version control system or a simple way to use an external ones like Git.
+The software should be compatible with all major desktop and mobile operating systems.
+It should offer the ability to sync the knowledge base between different devices.
+Also useful would be the ability to share and work with others on the same note (provided it is worth sharing :)).
+Building on sharing, life collaboration could be a very useful feature.
+Ideally the system should offer different markup formats to choose from.
+The most important one is Richtext imho.
+In threads and articles discussing knowledge management systems many people often argue that plaintext (or plaintext-like formats like Markdown or the org-mode syntax) is the best format for such a system - I disagree. The main advantages of plaintext in this context are that it is future proof, version control systems can work with it very well and it is light. Plaintext may be more future proof than simple richtext markup formats like HTML, but I doubt that either is ever going to go away and writing a new parser for whatever Richtext format your software is using is an impossible task. The kind of richtext format that should be used for a task like this should be ASCII based and not binary, in my opinion, and therefore shouldn't really cause trouble for version management systems. And I doubt that the size of the data in a knowledge management system will ever become a serious concern for anyone, unless the chosen file format is *really* space inefficient. Plaintext has one big disadvantage. It is easier for the average person to note down ideas if you have more tools - like colors, ability to highlight sentences, etc. - available. Therefore, forcing the user to use plaintext, goes against the philosophy which I stated at the top of this section: The additional (and probably also unnecessary) restriction causes inconvenience for the user.
+It should offer an easy way to embed images.
+There should be the ability to draw and create diagrams because certain ideas are hard to explain with words but easy to explain with a crude drawing.
+As explained before, the ability to create mindmaps might be useful.
+It should have hyperlinks to resources both within the knowledge base and externally.
+A powerful search function is a must, so previous notes can be found again when they are required.
+The system should also be able to suggest related note to the one currently viewed.
+In general, the user shouldn't be forced to use a certain paradigm of organization.
+Some knowledge management system force the user to organize all notes into a large hierarchy or use things like tagging. The ideal knowledge management system should support different ways of thinking but shouldn't force the user in any of them. For example, coming up with a sensible hierarchy of categories for your notes takes time and energy, and may even be made redundant again in the future by changing interests. A very radical but brain friendly way of organizing notes is https://zettelkasten.de/[Zettelkasten] - the notes are just put onto one big pile and provided with links to related notes (for example like it is done on Wikipedia). On top of this, a sufficiently intelligent system could also scan the content of the notes autonomously (deep learning :)) and suggest related notes without there being explicit connections.
+Lastly, a powerful plugin system is crucial.
+A huge part of the available note taking software lacks features that may be crucial for many users. Therefore the community should be given the ability to provide addons in such areas. Plugins should be able to be built in popular e.g. in Lua or Python (example of a good plugin system: Calibre). The plugins should build on a platform-independent layer of the program, so that (ideally) each plugin runs on each supported platform without having to be ported.
+
+== Which knowledge management software exist already?
+
+* OneNote
+* DEVONThink
+* Evernote
+* Joplin
+* https://obsidian.md[Obsidian]
+* https://getpolarized.io[Polar]
+* Emacs org-mode
+* Emacs org-roam
+* https://roamresearch.com/[Roam]
+* Just files in the file system
+* Zotero
+* Tinderbox
+* https://zettelkasten.de/[Zettelkasten]
+* https://gitnoteapp.com/[GitNote]
+* https://www.qownnotes.org/[QOwnNotes]
+* https://www.mindforger.com/[MindForger]
+* https://foambubble.github.io/foam/[Foam] - An interesting Roam clone built on VS Code
+* Turtl
+* Leanote
+* Epsilon Notes
+
+== Related ideas
+
+* Historical related project: https://en.wikipedia.org/wiki/Memex[memex]
+* https://www.buildingasecondbrain.com/[Build a second brain]
