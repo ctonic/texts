@@ -1,0 +1,23 @@
+= About this Website
+Christoph Tittel
+2020-04-05
+:page-layout: post
+
+Technical details about this website.
+
+This is a static website hosted on https://pages.github.com/[GitHub Pages].
+The domain was purchased through https://www.namecheap.com/[namecheap].
+
+The majority of the files use the https://asciidoctor.org/[AsciiDoctor], a powerful yet simple markup language with a more consistent syntax than Markdown. https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc] is used as conversion backend for Jekyll.
+AsciiDoc was originally developed as a simple way to write complex books in plaintext and is today used for this purpose by major publishers such as O'Reilly.
+The CSS styling is a customized version of the Asciidoctor default stylesheet.
+
+The building of the site happens on GitHub itself, using https://github.com/features/actions[GitHub action].
+Thanks to this no specific environment is required to make changes to the website and it can even be done from the web interface.
+
+Currently, these Jekyll plugins are used:
+
+- `jekyll-asciidoc` as AsciiDoctor backend
+- `jekyll-sitemap` to generate a new sitemap during each build (which is referenced in the https://ctonic.github.io/robots.txt[robots.txt])
+- `jekyll-seo-tag` to add some SEO tags to the header (whats the point of a website that noone can visit :) )
+- The http://jch.penibelst.de/[Compress HTML in Jekyll] layout to remove unecessary tags in the final HTML (to keep the site as light as possible)
